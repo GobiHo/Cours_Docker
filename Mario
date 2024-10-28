@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mario en HTML/CSS</title>
+<style>
+  /* Style général de la grille */
+  .mario {
+    display: grid;
+    grid-template-columns: repeat(16, 20px);
+    grid-template-rows: repeat(20, 20px);
+    gap: 2px;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  /* Couleurs */
+  .red { background-color: #ff0000; }  /* Casquette et chemise */
+  .blue { background-color: #0000ff; } /* Salopette */
+  .brown { background-color: #8b4513; } /* Cheveux et chaussures */
+  .peach { background-color: #ffcc99; } /* Peau */
+  .white { background-color: #ffffff; } /* Blanc des yeux */
+  .black { background-color: #000000; } /* Détails en noir */
+
+  /* Pixels de Mario */
+  .pixel {
+    width: 20px;
+    height: 20px;
+  }
+</style>
+</head>
+<body>
+  <h2 style="text-align: center;">Mario en HTML/CSS</h2>
+  <div class="mario">
+    <!-- Ligne 1 -->
+    <div></div><div></div><div></div><div></div><div></div><div class="red pixel"></div><div class="red pixel"></div><div class="red pixel"></div><div class="red pixel"></div><div class="red pixel"></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <!-- Ligne 2 -->
+    <div></div><div></div><div></div><div></div><div class="red pixel"></div><div class="peach pixel"></div><div class="peach pixel"></div><div class="peach pixel"></div><div class="peach pixel"></div><div class="red pixel"></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <!-- Ligne 3 -->
+    <div></div><div></div><div></div><div class="red pixel"></div><div class="peach pixel"></div><div class="red pixel"></div><div class="red pixel"></div><div class="peach pixel"></div><div class="red pixel"></div><div class="peach pixel"></div><div class="red pixel"></div><div></div><div></div><div></div><div></div><div></div>
+    <!-- Ligne 4 -->
+    <div></div><div></div><div class="red pixel"></div><div class="peach pixel"></div><div class="black pixel"></div><div class="peach pixel"></div><div class="peach pixel"></div><div class="black pixel"></div><div class="peach pixel"></div><div class="black pixel"></div><div class="peach pixel"></div><div class="red pixel"></div><div></div><div></div><div></div><div></div>
+    <!-- Ligne 5 -->
+    <div></div><div></div><div class="peach pixel"></div><div class="peach pixel"></div><div class="peach pixel"></div><div class="brown pixel"></div><div class="peach pixel"></div><div class="peach pixel"></div><div class="brown pixel"></div><div class="peach pixel"></div><div class="peach pixel"></div><div class="peach pixel"></div><div></div><div></div><div></div><div></div>
+    <!-- Ligne 6 -->
+    <div></div><div></div><div class="blue pixel"></div><div class="blue pixel"></div><div class="blue pixel"></div><div class="blue pixel"></div><div class="brown pixel"></div><div class="brown pixel"></div><div class="blue pixel"></div><div class="blue pixel"></div><div class="blue pixel"></div><div class="blue pixel"></div><div></div><div></div><div></div><div></div>
+    <!-- Ligne 7 -->
+    <div></div><div></div><div class="blue pixel"></div><div class="blue pixel"></div><div class="blue pixel"></div><div class="blue pixel"></div><div class="blue pixel"></div><div class="blue pixel"></div><div class="blue pixel"></div><div class="blue pixel"></div><div class="blue pixel"></div><div class="blue pixel"></div><div></div><div></div><div></div><div></div>
+    <!-- Ligne 8 -->
+    <div></div><div class="brown pixel"></div><div class="brown pixel"></div><div class="blue pixel"></div><div class="blue pixel"></div><div></div><div class="blue pixel"></div><div class="blue pixel"></div><div></div><div class="blue pixel"></div><div class="blue pixel"></div><div class="brown pixel"></div><div class="brown pixel"></div><div></div><div></div><div></div>
+    <!-- Ligne 9 -->
+    <div></div><div class="brown pixel"></div><div class="brown pixel"></div><div class="blue pixel"></div><div class="blue pixel"></div><div></div><div class="blue pixel"></div><div class="blue pixel"></div><div></div><div class="blue pixel"></div><div class="blue pixel"></div><div class="brown pixel"></div><div class="brown pixel"></div><div></div><div></div><div></div>
+  </div>
+</body>
+</html>
